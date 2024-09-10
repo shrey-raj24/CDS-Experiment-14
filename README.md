@@ -205,7 +205,7 @@ int main()
 ![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14c.png) 
 
 (D) <br> 
-![](https://github.com/Shloka-Patel/Experiment---14/blob/main/Output_14D.png) 
+![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14d.png) 
 
 ### Conclusion 
 I learnt about inheritance in C++, its keywords, modes, types and performed programs based on that. 
