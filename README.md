@@ -101,51 +101,73 @@ int main(){
 (C) <br> 
 ```
 
+
 // NAME - SHREY RAJ
-// PRN - 23070123123 
-// EXPERIMENT - 14(B) 
+// PRN - 23070123123
+// EXPERIMENT - 14(C) 
 
 #include<iostream> 
-#include<string> 
+#include<string>
 using namespace std; 
 
-// Parent CLass1 
-class Vehicle {
-    public:
-    string company=" Ford";
-    void type(){
-        cout << "Mustang"<< endl;
+// single base class
+class Student {
+public:
+    string stud;
+    void get_Student_data()
+    {
+        cout << "Enter the name of the student: ";
+        cin >>  stud;
     }
 };
-// Parent Class 2
-class Specs{
-    public:
-    string mileage="8 kmpl";
-    void colour(){
-        cout<<"Grey"<<endl;
+ 
+// derived class from base class
+class PRN : public Student {
+public:
+    int prn;
+    void get_PRN_data()
+    {
+        cout << "Enter the PRN: ";
+        cin >> prn;
     }
 };
-// Child Class-1 (derived from parent- 1&2)
-class Car: public Vehicle,public Specs{
-    public:
-    string seater = " 4 seater";
+ 
+// derived from class derive1
+class Branch : public PRN {
+private:
+   string branch;
+ 
+public:
+    void get_Branch_data()
+    {
+        cout << "Enter the branch: ";
+        cin >> branch;
+    }
+ 
+    // function to print sum
+    void details()
+    {
+        cout << "Name: "<<stud<<"  PRN: "<< prn<<"  Branch: "<<branch << endl;
+    }
 };
-int main(){
-    //multiple inheritance
-    Car f2;
-    f2.colour();
-    cout<<f2.company<<" ";
-    f2.type();
-    cout<<"("<<f2.seater<<")"<<endl<<"MILEAGE:"<<f2.mileage<<endl;
+int main()
+{
+    // object of sub class
+    Branch obj;
+ 
+    obj.get_Student_data();
+    obj.get_PRN_data();
+    obj.get_Branch_data();
+    obj.details();
+    return 0;
 } 
 
 // Output 
-// Grey
-//  Ford Mustang
-// ( 4 seater)
-// MILEAGE:8 kmpl
-                                   
-```
+// Enter the name of the student: Shloka
+// Enter the PRN: 120
+// Enter the branch: ENTC
+// Name: Shloka  PRN: 120  Branch: ENTC
+
 
 (D) <br> 
 ```
