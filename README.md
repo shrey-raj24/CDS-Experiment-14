@@ -200,7 +200,7 @@ int main()
 ![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14a.png) 
 
 (B) <br> 
-![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14a.png) 
+![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14b.png) 
 
 (C) <br> 
 ![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14c.png) 
