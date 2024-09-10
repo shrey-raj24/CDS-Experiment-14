@@ -101,73 +101,51 @@ int main(){
 (C) <br> 
 ```
 
-
 // NAME - SHREY RAJ
-// PRN - 23070123123
-// EXPERIMENT - 14(C) 
+// PRN - 23070123123 
+// EXPERIMENT - 14(c) 
 
 #include<iostream> 
-#include<string>
+#include<string> 
 using namespace std; 
 
-// single base class
-class Student {
-public:
-    string stud;
-    void get_Student_data()
-    {
-        cout << "Enter the name of the student: ";
-        cin >>  stud;
+// Parent CLass1 
+class Vehicle {
+    public:
+    string company=" Ford";
+    void type(){
+        cout << "Mustang"<< endl;
     }
 };
- 
-// derived class from base class
-class PRN : public Student {
-public:
-    int prn;
-    void get_PRN_data()
-    {
-        cout << "Enter the PRN: ";
-        cin >> prn;
+// Parent Class 2
+class Specs{
+    public:
+    string mileage="8 kmpl";
+    void colour(){
+        cout<<"Grey"<<endl;
     }
 };
- 
-// derived from class derive1
-class Branch : public PRN {
-private:
-   string branch;
- 
-public:
-    void get_Branch_data()
-    {
-        cout << "Enter the branch: ";
-        cin >> branch;
-    }
- 
-    // function to print sum
-    void details()
-    {
-        cout << "Name: "<<stud<<"  PRN: "<< prn<<"  Branch: "<<branch << endl;
-    }
+// Child Class-1 (derived from parent- 1&2)
+class Car: public Vehicle,public Specs{
+    public:
+    string seater = " 4 seater";
 };
-int main()
-{
-    // object of sub class
-    Branch obj;
- 
-    obj.get_Student_data();
-    obj.get_PRN_data();
-    obj.get_Branch_data();
-    obj.details();
-    return 0;
+int main(){
+    //multiple inheritance
+    Car f2;
+    f2.colour();
+    cout<<f2.company<<" ";
+    f2.type();
+    cout<<"("<<f2.seater<<")"<<endl<<"MILEAGE:"<<f2.mileage<<endl;
 } 
 
 // Output 
-// Enter the name of the student: Shloka
-// Enter the PRN: 120
-// Enter the branch: ENTC
-// Name: Shloka  PRN: 120  Branch: ENTC
-
+// Grey
+//  Ford Mustang
+// ( 4 seater)
+// MILEAGE:8 kmpl
+                                     
+```
 
 (D) <br> 
 ```
@@ -213,21 +191,22 @@ int main()
 // This flower is a lotus. 
 // This is a Flower.
 // Thisflower is a marigold. 
-                                                                                            
+  return 0;
+}                                                                                             
 ```
 
 ### Output 
 (A) <br>  
-![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14a.png) 
+![](https://github.com/Shloka-Patel/Experiment---14/blob/main/Output_14A.png) 
 
 (B) <br> 
-![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14b.png) 
+![](https://github.com/Shloka-Patel/Experiment---14/blob/main/Output_14B.png) 
 
 (C) <br> 
-![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14c.png) 
+![](https://github.com/Shloka-Patel/Experiment---14/blob/main/Output_14C.png) 
 
 (D) <br> 
-![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14d.png) 
+![](https://github.com/Shloka-Patel/Experiment---14/blob/main/Output_14D.png) 
 
 ### Conclusion 
 I learnt about inheritance in C++, its keywords, modes, types and performed programs based on that. 
