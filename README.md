@@ -197,10 +197,10 @@ int main()
 
 ### Output 
 (A) <br>  
-![](https://github.com/Shloka-Patel/Experiment---14/blob/main/Output_14A.png) 
+![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14a.png) 
 
 (B) <br> 
-![](https://github.com/Shloka-Patel/Experiment---14/blob/main/Output_14B.png) 
+![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14a.png) 
 
 (C) <br> 
 ![](https://github.com/shrey-raj24/CDS-Experiment-14/blob/main/Output_14c.png) 
