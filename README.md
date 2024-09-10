@@ -11,11 +11,10 @@ Visual Studio Code.
 ### Code 
 (A) <br> 
 ```
-// NAME - SHLOKA PATEL 
-// PRN - 23070123120 
-// EXPERIMENT - 14(A)  
 
-// Program to show single inheritance.
+// NAME - SHREY RAJ
+// PRN - 23070123123
+// EXPERIMENT - 14(A)  
 
 # include <iostream>
 # include <string>
@@ -42,15 +41,20 @@ int main()
     cout<<u1.uni + " "+u1.dept ;
 } 
 
+// Output 
+// 
+// Engineering
+// Symbiosis  Electronics & Telecommunication
+
+
 ```
 
 (B) <br> 
 ```
-// NAME - SHLOKA PATEL 
-// PRN - 23070123120 
-// EXPERIMENT - 14(B) 
 
-// Program toshow multiple inheritance.
+// NAME - SHREY RAJ
+// PRN - 23070123123 
+// EXPERIMENT - 14(B) 
 
 #include<iostream> 
 #include<string> 
@@ -86,77 +90,68 @@ int main(){
     cout<<"("<<f2.seater<<")"<<endl<<"MILEAGE:"<<f2.mileage<<endl;
 } 
 
+// Output 
+// Grey
+//  Ford Mustang
+// ( 4 seater)
+// MILEAGE:8 kmpl
+
 ```
 
 (C) <br> 
 ```
-// NAME - SHLOKA PATEL 
-// PRN - 23070123120 
-// EXPERIMENT - 14(C) 
 
-// Program to showmultilevel inheritance.
+// NAME - SHREY RAJ
+// PRN - 23070123123 
+// EXPERIMENT - 14(B) 
 
 #include<iostream> 
-#include<string>
+#include<string> 
 using namespace std; 
 
-// single base class
-class Student {
-public:
-    string stud;
-    void get_Student_data()
-    {
-        cout << "Enter the name of the student: ";
-        cin >>  stud;
+// Parent CLass1 
+class Vehicle {
+    public:
+    string company=" Ford";
+    void type(){
+        cout << "Mustang"<< endl;
     }
 };
- 
-// derived class from base class
-class PRN : public Student {
-public:
-    int prn;
-    void get_PRN_data()
-    {
-        cout << "Enter the PRN: ";
-        cin >> prn;
+// Parent Class 2
+class Specs{
+    public:
+    string mileage="8 kmpl";
+    void colour(){
+        cout<<"Grey"<<endl;
     }
 };
- 
-// derived from class derive1
-class Branch : public PRN {
-private:
-   string branch;
- 
-public:
-    void get_Branch_data()
-    {
-        cout << "Enter the branch: ";
-        cin >> branch;
-    }
- 
-    // function to print sum
-    void details()
-    {
-        cout << "Name: "<<stud<<"  PRN: "<< prn<<"  Branch: "<<branch << endl;
-    }
+// Child Class-1 (derived from parent- 1&2)
+class Car: public Vehicle,public Specs{
+    public:
+    string seater = " 4 seater";
 };
-int main()
-{
-    // object of sub class
-    Branch obj;
- 
-    obj.get_Student_data();
-    obj.get_PRN_data();
-    obj.get_Branch_data();
-    obj.details();
-    return 0;
-}                                     
+int main(){
+    //multiple inheritance
+    Car f2;
+    f2.colour();
+    cout<<f2.company<<" ";
+    f2.type();
+    cout<<"("<<f2.seater<<")"<<endl<<"MILEAGE:"<<f2.mileage<<endl;
+} 
+
+// Output 
+// Grey
+//  Ford Mustang
+// ( 4 seater)
+// MILEAGE:8 kmpl
+                                   
 ```
 
 (D) <br> 
 ```
-// NMAE - SHLOKA PATEL 
-// PRN - 23070123120 
+
+// NMAE - SHREY RAJ
+// PRN - 23070123123
 // EXPERIMENT - 14(D) 
 
 // Program to show Hiererchical Inheritance.                    
@@ -189,7 +184,14 @@ int main()
     Lotus obj1;
     Marigold obj2;
     return 0;
-}                                                                                             
+} 
+
+// Output 
+// This is a Flower. 
+// This flower is a lotus. 
+// This is a Flower.
+// Thisflower is a marigold. 
+                                                                                            
 ```
 
 ### Output 
